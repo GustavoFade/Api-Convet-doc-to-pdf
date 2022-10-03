@@ -5,6 +5,8 @@ const app = express();
 app.use(express.json({limit: '100mb'}));
 app.use(express.urlencoded({limit: '100mb'}));
 
+const POR = process.env.PORT || 8080;
+// const HOST = '0.0.0.0';
 const EXTENCAO_SAIDA = '.pdf';
 app.get("/convert", async (request, response)=>{
     try{
@@ -20,6 +22,6 @@ async function convertDocToPdf(docBuf, EXTENCAO_SAIDA, filter){
     return await libre.convertAsync(docBuf, EXTENCAO_SAIDA, filter);
 }
 
-app.listen(8080,()=>{
-    console.log("Running");
+app.listen(POR,()=>{
+    console.log("Running " + POR);
 });
