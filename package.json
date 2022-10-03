@@ -1,0 +1,24 @@
+{
+  "name": "convert_pdf_libreoffice",
+  "version": "1.0.0",
+  "description": "Api simples usando a lib libreoffice-convert",
+  "main": "src/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "node src/index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/GustavoFade/Api-Convet-doc-to-pdf.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/GustavoFade/Api-Convet-doc-to-pdf/issues"
+  },
+  "homepage": "https://github.com/GustavoFade/Api-Convet-doc-to-pdf#readme",
+  "dependencies": {
+    "express": "^4.18.1",
+    "libreoffice-convert": "^1.4.1"
+  }
+}
